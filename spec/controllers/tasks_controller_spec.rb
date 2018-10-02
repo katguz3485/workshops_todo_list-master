@@ -4,7 +4,7 @@ RSpec.describe TasksController, type: :controller do
   describe 'GET tasks/new' do
     it 'exposes form to create new task' do
       get :new
-      expect(response).to be_success
+      expect(response).to be_successful
       assert_template 'tasks/new'
     end
   end
@@ -13,7 +13,7 @@ RSpec.describe TasksController, type: :controller do
     context "for no task attributes given" do
       it 'renders new template' do
         post :create, params: { task: { foo: 'bar' } }
-        expect(response).to be_success
+        expect(response).to be_successful
         assert_template 'tasks/new'
       end
     end
@@ -30,7 +30,7 @@ RSpec.describe TasksController, type: :controller do
   describe 'GET tasks' do
     it 'lists all the tasks' do
       get :index
-      expect(response).to be_success
+      expect(response).to be_successful
       assert_template 'tasks/index'
     end
   end
