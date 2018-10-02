@@ -110,7 +110,12 @@ ul li{
   color: grey;
 }
 
+.deadline_date {
+  font-style: normal;
+  font-size: 80%;
+  color: grey;
 
+}
 @media (max-width: 1000px) {
 
 
